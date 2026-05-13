@@ -11,24 +11,98 @@
 </head>
 <body>
 
-  Bill
+  <header class="header">
+    <img
+      class="logo"
+      src="assets/images/logo.svg"
+      alt="Splitter Logo"
+    >
+  </header>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+  <main class="calculator">
+    <section class="calculator__form">
+      <div class="form-group">
+        <label for="bill" class="form-label">
+          Bill
+        </label>
 
-  Number of People
+        <input
+          type="number"
+          class="form-input"
+          id="bill"
+          placeholder="0"
+          min="0">
+      </div>
 
-  Tip Amount
-  / person
+      <fieldset class="tip-selector">
+        <legend class="form-label">
+          Select Tip %
+        </legend>
 
-  Total
-  / person
+        <div class="tip-selector__buttons">
+          <button type="button" class="tip-button">5%</button>
+          <button type="button" class="tip-button">10%</button>
+          <button type="button" class="tip-button">15%</button>
+          <button type="button" class="tip-button">25%</button>
+          <button type="button" class="tip-button">50%</button>
 
-  Reset
+          <input
+            type="number"
+            class="tip-custon"
+            placeholder="Custom"
+            min="0">
+        </div>
+      </fieldset>
+
+      <div class="form-group">
+        <div class="form-label-group">
+          <label for="people" class="form-label">
+            Number of People
+          </label>
+
+          <span class="error-message">
+            Can't be zero
+          </span>
+        </div>
+
+        <input
+          type="number"
+          class="form-input"
+          id="people"
+          placeholder="0"
+          min="1"
+        >
+      </div>
+    </section>
+
+    <section class="calculator__result">
+      <div class="result-item">
+        <div>
+          <h2 class="result-title">Tip Amount</h2>
+          <span class="result-subtitle">/ person</span>
+        </div>
+
+        <output class="result-value">
+          $0.00
+        </output>
+      </output>
+      </div>
+
+      <div class="result-item">
+        <div>
+          <h2 class="result-title">Total</h2>
+          <span class="result-subtitle">/ person</span>
+        </div>
+
+        <output class="result-value">
+          "$0.00"
+        </output>
+      </div>
+
+      <button type="reset" class="reset-button">
+        Reset
+      </button>
+    </section>
+  </main>
 </body>
 </html>
