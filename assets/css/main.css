@@ -1,0 +1,129 @@
+body {
+  display: grid;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--Grey-200);
+}
+
+.header {
+  justify-self: center;
+}
+
+.calculator {
+  display: grid;
+  justify-self: center;
+  gap: 2rem;
+  width: min(100%, 335px);
+  padding: 3rem;
+  background-color: var(--White);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.calculator__form {
+  display: grid;
+  gap: 2rem;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font: var(--text-label);
+  color: var(--Grey-400);
+}
+
+.form-input {
+  padding: 0.8rem;
+  text-align: right;
+  font: var(--text);
+  color: var(--Green-900);
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-color: var(--Grey-50);
+  border-radius: 8px;
+  border: none;
+}
+
+#bill {
+  background-image: url("../images/icon-dollar.svg");
+}
+
+.tip-selector {
+  border: none;
+}
+
+.tip-selector .form-label {
+  margin-bottom: 0.5rem;
+}
+
+.tip-selector__buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1.5rem;
+}
+
+.tip-button,
+.tip-custom {
+  padding: 0.5rem;
+  text-align: center;
+  font: var(--text);
+  border: none;
+  border-radius: 6px;
+}
+
+/* .tip-custom:hover {
+  transform: translateY(2px);
+} */
+
+.tip-button {
+  color: var(--White);
+  background-color: var(--Green-900);
+}
+
+.tip-button:hover {
+  color: var(--Green-900);
+  background-color: var(--Green-400);
+}
+
+.tip-button:focus {
+  outline: 1px solid var(--Green-900);
+}
+
+.tip-custom {
+  text-align: right;
+  color: var(--Green-900);
+  background-color: var(--Grey-50);
+}
+
+.tip-custom:hover {
+  outline: 1px solid var(--Green-400);
+}
+
+.form-label__group {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+}
+
+#people {
+  background-image: url(../images/icon-person.svg);
+}
+
+#bill:focus,
+.tip-custom:focus,
+#people:focus {
+  outline: 1px solid var(--Green-400);
+}
+
+.error-message {
+  font: var(--text-label);
+  color: var(--Red);
+  display: none;
+}
+
+button, input {
+  cursor: pointer;
+}
