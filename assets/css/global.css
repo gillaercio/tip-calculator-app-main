@@ -29,6 +29,7 @@ html {
 :root {
   --Green-400: hsl(172, 67%, 45%);
   --Green-900: hsl(183, 100%, 15%);
+  --Green-1000: hsla(183, 85%, 20%);
   --Grey-500: hsl(186, 14%, 43%);
   --Grey-400: hsl(184, 14%, 56%);
   --Grey-200: hsl(185, 41%, 84%);
@@ -39,8 +40,9 @@ html {
 
   --space-mono: 'Space Mono', sans-serif;
 
-  --text-span: 1.2rem/120% var(--space-mono);
+  --text-span: 700 1.2rem/120% var(--space-mono);
   --text-label: 700 1.3rem/120% var(--space-mono);
   --text: 700 2rem/120% var(--space-mono);
-  --text-lg: 700 2.6rem/120% var(--space-mono);
+  --text-button: 700 1.8rem/100% var(--space-mono);
+  --text-value: 700 2.6rem/100% var(--space-mono);
 }
